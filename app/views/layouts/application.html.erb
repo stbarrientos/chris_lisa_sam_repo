@@ -7,8 +7,39 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+	<div class="login">
+			<h3>Log In</h3>
+	</div>
+	<div style="border: 1px dashed red;">
+		<div class="profile-pic">
+		<img src="http://3.bp.blogspot.com/-0onXBUDbyRw/Uha54E5GLfI/AAAAAAAAlfM/X68u6TNTBaI/s1600/batman.jpg">
+			<h2>Peter</h2>
+		</div>
+		<div class="ad">
+			<img src="http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2012/05/print-ads27.jpg">
+		</div>
+	</div>
+	<div class="nav">
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+			<li>Gallery</li>
+			<li>Contact</li>
+		</ul>
+	</div>
+</header>
+
+<div class="sidebar">
+	<div class="sidebar-ad">
+		<h3>AD</h3>
+	</div>
+</div>
+
 
 <%= yield %>
+
+<footer>Peter    peter@gmail.com      7045356543</footer>
 
 </body>
 </html>
