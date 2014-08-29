@@ -1,9 +1,9 @@
-class BlogsController < ApplicationController
+class UsersController < ApplicationController
 
 	def index
 	end
 
-	def gallery
+	def about
 	end
 
 	def show
@@ -14,6 +14,5 @@ class BlogsController < ApplicationController
 
 	def create
 	end
-
 
 end

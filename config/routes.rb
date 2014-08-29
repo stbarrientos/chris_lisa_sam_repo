@@ -2,6 +2,10 @@ Rails.application.routes.draw do
 
   root 'blogs#index'
   resources :blogs
+  resources :users
+
+  get '/gallery' => 'blogs#gallery'
+  get '/about' => 'users#about'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
