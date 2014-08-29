@@ -1,12 +1,11 @@
 class UsersController < ApplicationController
 
-	def index
-	end
+	before_action :authenticate!, only: [:new]
 
 	def about
 	end
 
-	def show
+	def contact
 	end
 
 	def new

@@ -1,5 +1,7 @@
 class BlogsController < ApplicationController
 
+	before_action :authenticate!, only: [:new]
+
 	def index
 	end
 

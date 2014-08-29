@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
 
   root 'blogs#index'
+  devise_for :users
   resources :blogs
-  resources :users
+  resources :users, only: [:contact,:new,:about,:create]
 
   get '/gallery' => 'blogs#gallery'
   get '/about' => 'users#about'
+  get '/contact' => 'users#contact'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
