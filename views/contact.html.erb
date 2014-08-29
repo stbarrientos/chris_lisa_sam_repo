@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Contact Me</title>
+</head>
+<body>
+<h2>Get in Touch!</h2>
+
+<%= form_for @contact do |contact| %>
+	
+	<%= contact.label :name %>
+	<%= contact.text_field :name %>
+
+	<%= contact.label :email %>
+	<%= contact.text_field :email %>
+
+	<%= contact.label :message %>
+	<%= contact.text_area :message %>
+
+	<%= contact.submit, 'Submit' %>
+
+<% end %>
+
+</body>
+</html>
+
