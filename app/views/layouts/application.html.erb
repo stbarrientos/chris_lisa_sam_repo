@@ -9,7 +9,12 @@
 <body>
 <header>
 	<div class="login">
+			<% unless user_signed_in? %>
 			<h3><%= link_to "Log In", new_user_session_path %></h3>
+			<% else %>
+			<h3><%= link_to "New Blog", new_blog_path %></h3>
+			<h3><%= link_to "Log Out", destroy_user_session_path, method: :destroy %></h3>
+			<% end %>
 	</div>
 	<div style="border: 1px dashed red;">
 		<div class="profile-pic">
